@@ -36,7 +36,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  jeffrey0408.github.io/Blok-2-web/ 
+ https://nl.burberry.com
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home
