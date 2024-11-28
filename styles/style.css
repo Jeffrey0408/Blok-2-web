@@ -36,9 +36,12 @@ h1 {
 
 /* Bron:  */
 
+ul {
+	display: flex;
+}
+
 li {
 	display: flex;
-	
 }
 
 li a{
