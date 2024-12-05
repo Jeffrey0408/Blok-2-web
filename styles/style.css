@@ -5,6 +5,43 @@
   box-sizing:border-box;  
 }
 
+@font-face {
+	font-family: burberry-house;
+	font-weight: normal;
+	src: url(/fonts/burberry-house-regular.woff2);
+}
+
+@font-face {
+	font-family: oracle-book;
+	font-weight: normal;
+	src: url(/fonts/oracle-book-medium.woff2);
+}
+
+@font-face {
+	font-family: oracle-book1;
+	font-weight: normal;
+	src: url(/fonts/oracle-book\(1\).woff2);
+}
+
+h1 {
+	font-family: burberry-house;
+	font-weight: bold;
+}
+
+h2 {
+	font-family: burberry-house;
+	font-weight: normal;
+}
+
+h3 {
+	font-weight: normal;
+}
+
+p {
+	font-family: oracle-book;
+	font-weight: normal;
+}
+
 
 /*********************/
 /* CUSTOM PROPERTIES */
@@ -23,13 +60,18 @@
 /* JOUW STYLING */
 /****************/
 
-h1 { 
-	font-family: sans-serif;
+header {
+	display: flex;
+}
+
+header nav {
+	align-items: right;
 }
 
 body {
 	margin: 0;
 	padding: 0;
+	background-color: #F5F5F5;
 }
 
 /* Bron:  */
@@ -113,6 +155,21 @@ footer ul {
 	  justify-content:center;
   }
   
+.product ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+  .product li {
+	display: flex;
+	flex-direction: column; 
+  }
+
+  .product img {
+	width: 100%;
+	order: -1;
+  }
+  
 	
   /******************************/
   /* DE CAROCARROUSEL CONTAINER */
@@ -121,15 +178,15 @@ footer ul {
   .caroCarrousel {
 	  /* basis waarden die door de hele carrousel gebruikt worden */
 	  /* kun je zelf aanpassen */
-	  --caroCarrouselMainColor:#333;
+	  /* --caroCarrouselMainColor:#333;
 	--caroCarrouselAccentColor:#1b75b3;
 	  --caroCarrouselShadeColor:#ddd9;
-	--caroCarrouselInverseColor:#e48a4c;
+	--caroCarrouselInverseColor:#e48a4c; */
 	
 	--caroCarrouselAutoScrollInterval:4000;
   
 	position: relative;
-	  outline:none;
+	outline:none;
   }
   
   /* dark mode */
@@ -168,11 +225,17 @@ footer ul {
 	display: none; /* voor chrome, safari en edge*/
   }
   
+  .caroCarrousel li:nth-of-type(1) {
+	margin-left: 20em;
+  }
   
+  .caroCarrousel li:nth-of-type(4) {
+	margin-right: 20em;
+  }
   /**************************/
   /* de carrousel elementen */
   .caroCarrousel > ul li {
-	flex-basis: 100%;
+	flex-basis: 50%;
 	flex-shrink: 0;
 	/* snappen als er gescrolled wordt - andere helft bij ul */
 	  scroll-snap-align:center;
