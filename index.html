@@ -12,16 +12,24 @@
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
-<body>
+<body class="home">
 	<header>
 		<h1>BURBERRY</h1>
+		<button><img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg" alt="nav button" />Menu</button>
 		<nav>
+			<!-- de sluit button -->
+			<!-- de button is ook niet relevant voor screenreaders -->
+			<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-cross.svg" alt="" />Sluit</button>
+			
 			<ul>
-				<li>Zoek</li>
-				<li>winkelwagen</li>
-				<li>Hamburger menu</li>
+			  <li><a class="active">Home</a></li>
+			  <li><a href="#">Knight</a></li>
+			  <li><a href="#">Ogre</a></li>
+			  <li><a href="#">Queen</a></li>
+			  <li><a href="#">Witch</a></li>
+			  <li><a href="#">Wizard</a></li>
 			</ul>
-		</nav>
+		  </nav>
 	</header>
 
 	<main>
@@ -89,7 +97,6 @@
 
 		<section class="gift">
 			<section id="bolletjesAndAutoScroll" class="caroCarrousel" aria-label="Voorbeeld met bolletjes en auto-scroll na bepaalde tijd" tabIndex="-1">
-				<!-- de id kun je zelf een naam geven en geef je mee in de js -->
 				<ul>
 				  <li id="element1"><img src="./images/Carousel-201.webp" alt="foto1" /></li>
 				  <li id="element2"><img src="./images/Carousel-202.webp" alt="foto2" /></li>
@@ -119,7 +126,6 @@
 			
 		</section>
 
-
 		<section class="wrapped">	
 			<div>
 				<h2>Personalised Scarves</h2>	
@@ -131,8 +137,8 @@
 
 		<section class="children">
 			<video autoplay muted controls loop src="./images/Burberry.mp4">video</video>
-			<h2>Childrenswear Gifts</h2>
-			<a href="#">Shop</a>
+				<h2>Childrenswear Gifts</h2>
+				<a href="#">Shop</a>
 		</section>
 
 		<section class="services">
@@ -145,21 +151,21 @@
 		<section class="last">
 			<ul>
 				<li>
-					<img src="./images/personalised-gifts.webp" alt="Scarf">
+					<img src="./images/Laatste-101.webp" alt="Scarf">
 					<h2>Personalised gifts</h2>
-					<li><a href="#">Women</a></li>
-					<li><a href="#">Men</a></li>
-					<li><a href="#">Explore</a></li>
+					<a href="#">Women</a>
+					<a href="#">Men</a>
+					<a href="#">Explore</a>
 				</li>
 					
 				<li>
-					<img src="./images/Burberry-services.webp" alt="gift">
+					<img src="./images/Laatste-102.webp" alt="gift">
 					<h2>Burberry services</h2>
-					<li><a href="#">Explore</a></li>
+					<a href="#">Explore</a>
 				</li>
 
 				<li>
-					<img src="./images/Gifting-&-styling-advice.webp" alt="door">
+					<img src="./images/Laatste-103.jpg" alt="door">
 					<h2>Gifting & Styling Advice</h2>
 					<a href="#">Contact Us</a>
 				</li>
@@ -172,25 +178,78 @@
 	<footer>
 		<h2>Sign Up</h2>
 		<input type="text" name="Email" id="Email">
-		<ul>
-			<li>Find a store</li>
-			<li>Stories</li>
-			<li>Burberry Services</li>
-			<li>Customer Support</li>
-			<li>About Burberry</li>
-			<li>Legal & Cookies</li>
-			<li>Language English</li>
-			<li>Shipping to Netherlands</li>
-		</ul>
-		<a href="#">Slavery Statement</a>
+		<p><a href="#">Find a Store</a></p>
+
+	<details>
+		<summary>Stories</summary>
+		<li>
+			<a href="#">Outerwear 2024</a>
+			<a href="#">Summer 2025</a>
+			<a href="#">Made in the UK: Scarf</a>
+			<a href="#">Our Heritage</a>
+			<a href="#">Made in the UK: Trench</a>
+		</li>
+	</details>
+
+	<details>
+		<summary>Burberry Services</summary>
+		<li>
+			<a href="#">Trench Bespoke</a>
+			<a href="#">ReBurberry Services</a>
+			<a href="#">Personalisation</a>
+			<a href="#">All Services</a>
+		</li>
+	</details>
+
+	<details>
+		<summary>Customer Support</summary>
+		<li>
+			<a href="#">Contact us</a>
+			<a href="#">Returns</a>
+			<a href="#">Shipping</a>
+			<a href="#">Ordering & Payment</a>
+			<a href="#">FAQs</a>
+			<a href="#">All Support</a>
+		</li>
+	</details>
+
+	<details>
+		<summary>About Burberry</summary>
+		<li>
+			<a href="#">Burberry Heritage</a>
+			<a href="#">Sustainability</a>
+			<a href="#">Corporate Responsibility</a>
+			<a href="#">Burberry Group Plc</a>
+			<a href="#">Careers</a>
+		</li>
+	</details>
+
+	<details>
+		<summary>Legal & Cookies</summary>
+		<li>
+			<a href="#">Terms & Conditions</a>
+			<a href="#">Privacy Policy</a>
+			<a href="#">Cookie Policy</a>
+			<a href="#">Accessibility Statement</a>
+			<a href="#">Site Map</a>
+		</li>
+	</details>
+	<p>Language <a href="#">English</a></p>
+	<p>Shipping to <a href="#">Netherlands ($)</a></p>
+
+	<div>
+		<p><a href="#">Modern Slavery Statement</a>
 		<p>If you are using a screen-reader and are having problems using this website, please call +31 20 808 86 35 or contact us for assistance.
 			Burberry Limited, Horseferry House, Horseferry Road, London, SW1P 2AW
 			Registered in England & Wales
 			Registered Company Number: 00162636
 		</p>
+	</div>
+	
 	</footer>
 	
 	<script defer src="scripts/script.js"></script>
 </body>
 	
 </html>
+
