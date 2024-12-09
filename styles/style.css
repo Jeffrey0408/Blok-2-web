@@ -23,6 +23,29 @@
 	src: url(/fonts/oracle-book\(1\).woff2);
 }
 
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#F5F5F5;
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+body {
+	background-color: var(--color-background);
+	margin: 0;
+	padding: 0;
+}
+
 h1 {
 	font-family: burberry-house;
 	font-weight: bold;
@@ -42,26 +65,13 @@ p {
 	font-weight: normal;
 }
 
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#F5F5F5;
-}
-
-
-
-
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
 header {
 	display: flex;
+}
+
+h1 {
+	position: relative;
+	left: 0.5rem;
 }
 
 nav {
@@ -72,14 +82,16 @@ nav {
 	top:0;
 	bottom:0;
 	z-index: 2;
-	background-color: #111;
+	background-color: var(--color-background);
 	
 	/* JOUW CODE HIER - stap 2 */
-	translate:-100% 0%;
+	translate: 150% 0%;
 	
 	/* JOUW CODE HIER - stap 4 */
 	transition:translate .3s;
   }
+
+  
 
 nav ul {
 	display: flex;
@@ -87,18 +99,53 @@ nav ul {
 }
 
 
+nav button {
+	position: absolute;
+	right: 0.5rem;
+	top: 1.5rem;
+	border-style: none;
+	width: 10%;
+	background-color: var(--color-background);
+}
+
+nav img {
+	width: 100%;
+}
 
   /* als menu open is */
   nav.toonMenu {
-	/* JOUW CODE HIER - stap 4 */
 	translate:0% 0%;
   }
-  
 
-body {
-	margin: 0;
-	padding: 0;
+nav > ul > li > a {
+	display: block;
+	text-decoration: none;
+	color: #111;
+	font-size: 20px;
+	margin: 0.5rem;
 }
+
+nav > ul {
+	margin-left: 0.5rem;
+	list-style-type: none;
+}
+  
+  
+  header > button {
+	background-color: var(--color-background);
+	width: 10%;
+	border-style: none;
+	position: absolute;
+	right: 0.5rem;
+	top: 1.5rem;
+  }
+
+  header > button > img {
+	color: #111;
+	width: 100%;
+  }
+
+/* Hier begint de main */
 
 .home {
 	background-color: var(--color-background);
@@ -110,10 +157,7 @@ ul {
 	display: flex;
 	margin: 0;
 	padding: 0;
-}
-
-li {
-	display: flex;
+	list-style-type: none;
 }
 
 .wrapped a{
@@ -168,15 +212,6 @@ footer ul {
 	position: relative;
 }
 
-
-
-.services {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	align-items: center;
-	padding: 3em;
-}
 
 .last ul {
 	display: grid;
@@ -528,7 +563,7 @@ details > li {
   }
 
 details summary {
-	list-style: none;
+	list-style-type: none;
 }
 
 details a {
@@ -540,3 +575,10 @@ footer > div {
 	font-size: smaller;
 }
 
+.services {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	padding: 3em;
+}
