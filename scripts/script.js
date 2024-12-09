@@ -11,10 +11,11 @@ function createCaroCarrousel(carrouselID) {
   let autoScrollInterval = 4000;
   let autoScrollTimer;
 	
-  
-  /****************/
+
+//   Bron CAROUSEL: https://codepen.io/shooft/pen/yLKjzWa 
+
 	/* DE BOLLETJES */
-	/****************/
+
   
   // de bolletjes activeren
   function iniBolletjes() {
@@ -101,11 +102,11 @@ function createCaroCarrousel(carrouselID) {
   }
   
   
-  /*********************/
+
 	/* ALGEMENE FUNCTIES */
-	/*********************/
+
   
-  //////////////////////////////////
+
   // naar volgende/vorige element //
   function goToElement(direction) {
 		// het huidige current element opzoeken
@@ -132,8 +133,7 @@ function createCaroCarrousel(carrouselID) {
 		scrollToElement(newElement);
   }
   
-  
-  ///////////////////////////
+
   // scroll to new element //
   function scrollToElement(newElement) {
     // carousel container opzoeken
@@ -155,7 +155,7 @@ function createCaroCarrousel(carrouselID) {
   }
   
   
-  ////////////////////////////
+
 	// update current element //
 	function updateCurrentElement(newElement) {
 		// het huidige current element opzoeken
@@ -167,8 +167,7 @@ function createCaroCarrousel(carrouselID) {
 		newElement.classList.add("current");
 	}
 
-  
-  //////////////////////
+
   // update bolletjes //
   function updateBolletjes(newElement){
 		// het huidige current bolletje opzoeken
@@ -192,9 +191,8 @@ function createCaroCarrousel(carrouselID) {
 }
 
 
-/************************/
 /* DE CARROUSEL CREËREN */
-/************************/
+
 
 // nadat de pagina geladen is, de carrousels activeren
 (function() {
@@ -204,11 +202,11 @@ function createCaroCarrousel(carrouselID) {
 })();
 
 
-/******************************/
-/* menu openen de MENU button */
-/******************************/
+// Bron 1 HAMBURGER MENU https://codepen.io/shooft/pen/VwJXNEg?editors=1010
 
-/* JOUW CODE HIER - stap 4 */
+
+/* menu openen de MENU button */
+
 
 // stap 1: zoek de menu-button op en sla die op in een variabele
 var openButton = document.querySelector("header > button");

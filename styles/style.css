@@ -75,7 +75,6 @@ h1 {
 }
 
 nav {
-	/* JOUW CODE HIER - stap 1 */
 	position:fixed;
 	left:0;
 	right:0;
@@ -83,11 +82,7 @@ nav {
 	bottom:0;
 	z-index: 2;
 	background-color: var(--color-background);
-	
-	/* JOUW CODE HIER - stap 2 */
 	translate: 150% 0%;
-	
-	/* JOUW CODE HIER - stap 4 */
 	transition:translate .3s;
   }
 
@@ -284,19 +279,13 @@ details > li {
 	margin: 1em
   }
 
-
+  /*   Bron CAROUSEL: https://codepen.io/shooft/pen/yLKjzWa  */
 	
   /******************************/
   /* DE CAROCARROUSEL CONTAINER */
   /******************************/
   
   .caroCarrousel {
-	  /* basis waarden die door de hele carrousel gebruikt worden */
-	  /* kun je zelf aanpassen */
-	  /* --caroCarrouselMainColor:#333;
-	--caroCarrouselAccentColor:#1b75b3;
-	  --caroCarrouselShadeColor:#ddd9;
-	--caroCarrouselInverseColor:#e48a4c; */
 	
 	--caroCarrouselAutoScrollInterval:4000;
   
@@ -347,6 +336,7 @@ details > li {
   .caroCarrousel li:nth-of-type(4) {
 	margin-right: 20em;
   }
+
   /**************************/
   /* de carrousel elementen */
   .caroCarrousel > ul li {

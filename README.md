@@ -56,7 +56,52 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+ Content
+- De taal waarin de code is geschreven is prima te begrijpen. Meerdere doelgroepen kunnen het verstaan.
+- Elke Button heeft wel een beschrijving. Maar niet elke beschrijving (class) is duidelijk.
+
+Global code 
+- Gebruikt ‘lang= en-NL’ op HTML element 
+- Semantisch klopt de site niet. Via link: https://nl.burberry.com/?language=en&utm_source=google&utm_medium=CPC&utm_channel=psr&utm_campaignid=11811714663&gad_source=1&gclid=EAIaIQobChMIl_bCub6bigMVqAsGAB3kgC6tEAAYASAAEgJ3b_D_BwE&gclsrc=aw.ds gecheckt. 
+- Op desktop kan je de site niet in- of uitzoomen. Op de telefoon wel.
+- Niet elke pagina heeft een unieke titel.
+
+Keyboard 
+- De linkjes hebben niet een duidelijke naam. Via de tab en shift+tab is het moeilijk te zien welke functie een link heeft.
+- Je kan door middel van het keyboard door de site heen lopen. Er is een visuele focus, waarin de gebruiker kan zien waar hij is.
+
+Mobile and touch
+- Wanneer de telefoon geroteerd is, worden de afbeeldingen erg groot is er heel weinig overzicht. 
+- Buttons en Links kunnen nog op geklikt worden. Maar als je de telefoon in je rechterhand houdt worden buttons etc. die links staan moeilijk te bereiken.
+- Er zit genoeg ruimte tussen de interactieve items.
+
+Headings 
+- Headings worden niet logisch gebruikt.
+- Er worden meerdere H1 gebruikt op één pagina.
+- Heading levels worden geskipt, want er zitten ook headings in afbeeldingen.
+
+Lists
+- Heel onduidelijk op welke manier li wordt gebruikt.e
+
+Images
+- Niet elke img heeft een alt tag
+
+Media
+- Video speelt automatisch af.
+- Video kan wel op pauze gezet worden
+- Carousel speelt automatisch af
+- Carousel kan niet gestopt worden
+
+Controls
+- Gebruiken a tag voor links
+- Links zien eruit links
+- Geen :Focus states
+- Gebruiken Button element voor Buttons
+
+Appearance 
+- Gebruiken geen dark of light mode
+- Gaat niet helemaal goed wanneer je de tekstgrootte vergoot. Deel valt buiten het scherm.
+
 
 </details>
 
@@ -199,20 +244,17 @@ Ik vond het lastig om de video in de html te plaatsen. Als ik de site van Burber
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Vragen Ronan:
+- Hoe haal je die icoontjes weg
+- Hoe werkt mn tweede carousel
+- Verschillende kleuren achtergrond body twee pagina’s
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  Uitleg was duidelijk.
+  Voor Hamburger menu de opdracht maken
 
 </details>
 
@@ -254,8 +296,8 @@ Ik vond het lastig om de video in de html te plaatsen. Als ik de site van Burber
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
 
+1. 4. Bron 1 HAMBURGER MENU https://codepen.io/shooft/pen/VwJXNEg?editors=1010
+
+2. Bron 2 CAROUSEL https://codepen.io/shooft/pen/yLKjzWa 
 </details>
