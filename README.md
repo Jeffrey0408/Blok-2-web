@@ -300,4 +300,5 @@ Ik vond het lastig om de video in de html te plaatsen. Als ik de site van Burber
 1. 4. Bron 1 HAMBURGER MENU https://codepen.io/shooft/pen/VwJXNEg?editors=1010
 
 2. Bron 2 CAROUSEL https://codepen.io/shooft/pen/yLKjzWa 
+
 </details>

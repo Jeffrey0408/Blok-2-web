@@ -86,7 +86,8 @@ nav {
 	transition:translate .3s;
   }
 
-  
+  /* Bron 1 HAMBURGER MENU https://codepen.io/shooft/pen/VwJXNEg?editors=1010 */
+
 
 nav ul {
 	display: flex;
@@ -145,8 +146,6 @@ nav > ul {
 .home {
 	background-color: var(--color-background);
 }
-
-/* Bron:  */
 
 ul {
 	display: flex;
